@@ -1,0 +1,284 @@
+#Program 1
+N=int(input("Enter the number of line:"))
+for I in range(1,N+1): #(1:N)
+    for J in range(1,I+1):
+        print('*',end='')
+    print()
+    
+Enter the number of line:7
+*
+**
+***
+****
+*****
+******
+*******
+Program 2
+N=int(input("Enter the Number of lines:")) #10
+for I in range(0,N): #0-10
+    for S in range(0,N-I-1): #0-4
+        print(end=" ")
+    for J in range(0,I+1):
+        print('*',end=" ")
+    print()
+    
+Enter the Number of lines:6
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+* * * * * * 
+Program 3
+N=int(input("Enter the Number of lines:"))
+for I in range(0,N):
+    for S in range(0,N-1-I):
+        print(end=" ")
+    for J in range(0,I+1):
+        print('*',end='')
+    print()
+Enter the Number of lines:5
+    *
+   **
+  ***
+ ****
+*****
+Program 4
+N=int(input("Enter the Number of lines:"))
+for I in range(0,N):
+    for J in range(0,I+1):
+        print('* ',end="")
+    print()
+Enter the Number of lines:5
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+Program 5
+N=int(input("Enter the Number of lines:"))
+for I in range(0,N):
+    for J in range(0,I+1):
+        print('* ',end="")
+    print()
+for I in range(N,1,-1):#5-2
+    for J in range(1,I):
+        print('* ',end="")
+    print()
+Enter the Number of lines:10
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * 
+* * * * * * * 
+* * * * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+ 
+Program 6:
+N=int(input("Enter the Number"))
+for I in range(N,0,-1):
+    for J in range(N,I,-1):
+        print(end=" ")
+    for K in range(0,I):
+        print('* ',end="")
+    print()
+Enter the Number5
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+Program 7:
+N=int(input("Enter the Number"))
+for I in range(N,0,-1):
+    for J in range(N,I,-1):
+        print(end=" ")
+    for K in range(0,I):
+        print('* ',end="")
+    print()
+for I in range(1,N):
+    for J in range(0,N-I-1):
+        print(end=" ")
+    for K in range(0,I+1):
+        print('* ',end="")
+    print()
+Enter the Number5
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+#Program 8:
+N=int(input("Enter the Number:"))
+for I in range(0,N):
+    for S in range(0,N-I-1):
+        print(end=" ")
+    for J in range(0,I+1):
+        print('* ',end="")
+    print()
+for I in range(N-1,0,-1):
+    for S in range(N,I,-1):
+        print(end=" ")
+    for J in range(0,I):
+        print('* ',end="")
+    print()
+Enter the Number:5
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+#Program 9:
+N=int(input("Enter the Number:"))
+for I in range(0,N): 
+    for S in range(0,N-I-1): 
+        print(end=" ")
+    for J in range(0,I+1):
+        if((I>=2 and I<N-1) and (J>0 and J<I)):
+            print(end="  ")
+        else:
+            print('*',end=" ")
+    print()
+Enter the Number:10
+         * 
+        * * 
+       *   * 
+      *     * 
+     *       * 
+    *         * 
+   *           * 
+  *             * 
+ *               * 
+* * * * * * * * * * 
+#Program 10:
+N=int(input("Enter the Number:"))
+for I in range(N,0,-1):
+    for J in range(N,I,-1):
+        print(end=" ")
+    for K in range(0,I):
+        if((I<N and I>2) and (K>0 and K<I-1)):
+            print(end="  ")
+        else:
+            print('*',end=" ")
+    print()
+ 
+Enter the Number:10
+* * * * * * * * * * 
+ *               * 
+  *             * 
+   *           * 
+    *         * 
+     *       * 
+      *     * 
+       *   * 
+        * * 
+         * 
+
+         #Program 11
+Name=input("Enter the Number")
+for I in range(0,len(Name)):
+    for J in range(0,I+1):
+        print(Name[J],end=" ")
+    print()
+Enter the NumberRakesh
+R 
+R a 
+R a k 
+R a k e 
+R a k e s 
+R a k e s h 
+#Program 12
+N=int(input("Enter the Number"))
+for I in range(0,N):
+    for J in range(0,I+1):
+        print(J+1,end=" ")
+    print()
+Enter the Number10
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+1 2 3 4 5 6 
+1 2 3 4 5 6 7 
+1 2 3 4 5 6 7 8 
+1 2 3 4 5 6 7 8 9 
+1 2 3 4 5 6 7 8 9 10 
+#Program 13
+for I in range(0,6):
+    for J in range(0,7):
+        if((I==0 and J%3!=0) or (I==1 and J%3==0) or (I+J)==8 or (I-J)==2):
+            print('*',end="")
+        else:
+            print(" ",end="")
+    print()
+ ** ** 
+*  *  *
+*     *
+ *   * 
+  * *  
+   *   
+#Program 14
+N=int(input("Enter the Number"))
+k=1
+for I in range(0,N):
+    for J in range(0,I+1):
+        print(k,end=" ")
+        k=k+1
+    print()
+Enter the Number10
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+16 17 18 19 20 21 
+22 23 24 25 26 27 28 
+29 30 31 32 33 34 35 36 
+37 38 39 40 41 42 43 44 45 
+46 47 48 49 50 51 52 53 54 55 
+#Program 15
+def fact(n):
+    f=1
+    if n==0:
+        return 1
+    for I in range(2,n+1):
+        f=f*I
+    return f
+def comb(m,n):
+    res=fact(m)//(fact(m-n)*fact(n))
+    return res
+N=int(input("Enter the Number:"))
+for I in range(0,N):
+    for J in range(0,I+1):
+        print(comb(I,J)," ",end=" ")
+    print()
+Enter the Number:7
+1   
+1   1   
+1   2   1   
+1   3   3   1   
+1   4   6   4   1   
+1   5   10   10   5   1   
+1   6   15   20   15   6   1   
+ 
